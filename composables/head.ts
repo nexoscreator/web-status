@@ -1,7 +1,7 @@
 export const useCustomHead = (
-  title = "StatusBase",
-  description = "Free & Open Source uptime monitoring tool and beautiful status pages with incidents reports. Powered by Nuxt Content!",
-  image = "https://statusbase.vercel.app/og.png"
+  title = "Nexos Status",
+  description = "Free & Open Source uptime monitoring tool and beautiful status pages with incidents reports. Powered by Nexos Creator!",
+  image = "https://status.nexoscreation.com/og.png"
 ) => {
   useHead({
     title,
@@ -15,7 +15,7 @@ export const useCustomHead = (
         content: description,
       },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@zernonia" },
+      { name: "twitter:site", content: "@nexoscreator" },
       { name: "twitter:title", content: title },
       {
         name: "twitter:description",
@@ -24,7 +24,7 @@ export const useCustomHead = (
       { name: "twitter:image", content: image },
       { property: "og:type", content: "website" },
       { property: "og:title", content: title },
-      { property: "og:url", content: "https://statusbase.vercel.app/" },
+      { property: "og:url", content: "https://status.nexoscreation.com/" },
       { property: "og:image", content: image ?? image },
       {
         property: "og:description",

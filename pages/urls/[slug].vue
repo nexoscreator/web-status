@@ -12,7 +12,7 @@ const { data: incidents } = await useLazyAsyncData(`incident-${slug}`, () =>
     .find()
 )
 const gridCount = useGridCount()
-useCustomHead(`${url.value.title} Status Page | StatusBase`)
+useCustomHead(`${url.value.title} Status Page | Nexos`)
 </script>
 
 <template>
