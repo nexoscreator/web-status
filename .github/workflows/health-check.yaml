@@ -22,4 +22,4 @@ jobs:
         env:
           HEALTH_STATUS: ${{ steps.health_check.outputs.status || 'No output' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |bash ./script/notification.sh
+        run: bash ./script/notification.sh
