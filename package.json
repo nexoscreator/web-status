@@ -1,9 +1,9 @@
 {
-  "name": "statusbase-nuxt",
+  "name": "web-status",
   "version": "1.0.0",
   "description": "A modern, zero-dependency uptime monitoring tool & status page based on GitHub Actions & Nuxt Content v2.",
   "license": "MIT",
-  "author": "zernonia",
+  "author": "nexoscreator",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
