@@ -1,3 +1,5 @@
+#!/bin/bash
+
 commit=true
 origin=$(git remote get-url origin)
 if [[ $origin == *status-base/statusbase* ]]
@@ -21,7 +23,6 @@ do
   URLSARRAY+=(${URLTOKENS[1]})
 done
 
-
 echo "***********************" 
 echo "Starting health checks with ${#KEYSARRAY[@]} configs:"
 
@@ -39,8 +40,10 @@ do
     else
       result="failed"
     fi
-    echo "::set-output name=$key::$key=$result"  # echo output to workflows
-  
+
+    # Set the output for GitHub Actions using Environment Files
+    echo "$key=$key=$result" >> $GITHUB_ENV
+
     if [ "$result" = "success" ]; then
       break
     fi
@@ -57,7 +60,7 @@ do
     fi
 
     echo "${dateTime}, ${result}" >> ${filename}
-    # By default we keep 2000 last log entries.  Feel free to modify this to meet your needs.
+    # By default we keep 2000 last log entries. Feel free to modify this to meet your needs.
     echo "$(tail -2000 ${filename})" > ${filename}
   else
     echo "    $dateTime, $result"
