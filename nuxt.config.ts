@@ -1,4 +1,7 @@
+import { defineNuxtConfig } from 'nuxt'
+
 export default defineNuxtConfig({
-  css: ["~/assets/main.css"],
-  modules: ["nuxt-windicss", "@nuxt/content", "unplugin-icons/nuxt"]
+  modules: ['nuxt-windicss', '@nuxt/content', 'unplugin-icons/nuxt'],
+  css: ['~/assets/main.css'],
+  // Other configurations...
 })
