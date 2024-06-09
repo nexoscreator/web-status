@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: "18"
 
-      - run: yarn install
-      - run: yarn build
+      - run: npm install
+      - run: npm build
         env:
           NITRO_PRESET: github_pages
 
