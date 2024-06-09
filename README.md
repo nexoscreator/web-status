@@ -1,11 +1,4 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/zernonia/statusbase">
-    <img src="public/logo.svg" alt="Logo" width="80">
-  </a>
-
-  <h3 align="center">StatusBase</h3>
+  <h3 align="center">Nexos Status</h3>
 
   <p align="center">
    Uptime monitoring tool & beautiful status pages <br><br> Powered by <a href="https://content.nuxtjs.org/" target="_blank"> Nuxt Content v2!</a>
@@ -86,13 +79,3 @@ Contributions are what make the open source community such an amazing place to b
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-# 📧 Contact
-
-Zernonia - [@zernonia](https://twitter.com/zernonia) - zernonia@gmail.com
-
-Also, if you like my work, please buy me a coffee ☕😳
-
-<a href="https://www.buymeacoffee.com/zernonia" target="_blank">
-  <img width=200 src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Logo" >
-</a>
